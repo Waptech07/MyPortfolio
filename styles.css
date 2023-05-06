@@ -142,14 +142,14 @@ span {
 .about-heading h1 {
     color: #027bcc;
 }
-
+/* 
 .about-image img {
     border-radius: 10px;
     width: 30%;
     height: 100%;
     float: left;
     margin: 10px 2% 2px 12%;
-}
+} */
 
 .about p {
     color: #555;
