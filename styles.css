@@ -37,14 +37,28 @@ nav ul li {
     margin: 10px 30px;
 }
 
-.nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #027bcc;
     font-weight: bold;
+    position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #120055;
+}
+
+nav ul li a:hover::after {
+    width: 70%;
     color: #120055;
+    transition: width .3s;
 }
 
 .user {
@@ -383,9 +397,14 @@ footer {
         padding: 25px;
     }
 
+    nav ul li a:hover::after {
+        width: 0;
+    }
+
     nav ul li a:hover {
         background-color: #120055;
         color: #fff;
+        transition: color .5s, background-color .5s;
     }
 
     .nav-menu {
