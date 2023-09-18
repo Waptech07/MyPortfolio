@@ -393,8 +393,10 @@ footer {
 
     nav ul li a:hover {
         background-color: #120055;
+        border-bottom-left-radius: 17px;
+        border-top-right-radius: 20px;
         color: #fff;
-        transition: color .5s, background-color .5s;
+        transition: color .5s, background-color .5s, border-radius .2s;
     }
 
     .nav-menu {
