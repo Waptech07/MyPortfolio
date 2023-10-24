@@ -95,7 +95,7 @@ nav ul li a:hover::after {
     line-height: 22px;
 }
 
-.detail a {
+.detail a.btn {
     outline: 2px solid #120055;
     background: #fff;
     padding: 10px 70px;
@@ -107,6 +107,7 @@ nav ul li a:hover::after {
     border-radius: 5px;
     transition: color .5s ease-in-out, background-color .5s ease-in-out;
 }
+
 
 .detail a:hover {
     color: #fff;
@@ -175,7 +176,6 @@ nav ul li a:hover::after {
 /* Projects */
 .project {
     text-align: center;
-
 }
 
 .content {
@@ -191,15 +191,27 @@ nav ul li a:hover::after {
     align-items: center;
 }
 
+.buttons {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .project a.btn {
     outline: 2px solid #120055;
     background: transparent;
     color: #120055;
+    margin: 0 10px ;
 }
 
 .project a.btn:hover {
     color: #fff;
     background: #120055;
+}
+
+.fa-globe {
+    font-size: 20px;
 }
 
 /* Skills */
@@ -487,4 +499,101 @@ footer {
 
 #box.show {
     transform: translateX(0);
+}
+
+/* DARK MODE */
+.mode {
+    margin-right: 30px;
+}
+
+.lightmode {
+    display: none;
+    
+}
+
+.user.dark {
+    background-color: #333232;
+}
+
+.navbar.dark {
+    background: #141414ec;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.about.dark {
+    background: #212121;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+}
+
+#about.dark {
+    background: #333232;
+}
+
+
+#skills.dark {
+    background: #333232;
+}
+
+.skills-heading h2.dark {
+    background: #212121;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+.skills-details.dark {
+    background: #212121;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+.project.dark {
+    background: #333232;
+}
+
+.content.dark {
+    background: #212121;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+}
+
+.contact-container.dark {
+    background: #212121;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
+}
+
+#contact.dark {
+    background: #333232;
+}
+
+h2.dark {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+h3.dark {
+    color: #fff;
+}
+
+p.dark {
+    color: #ccc;
+}
+
+ul.dark {
+    background: #212121;
+}
+
+a.btn.dark {
+    outline: 2px solid #797979;
+    background: transparent;
+    color: #797979;
+}
+
+a.btn:hover.dark {
+    color: #000;
+    background: #fff;
+    outline: #fff;
+    font-weight: bold;
+}
+footer.dark {
+    background: #212121;
+    color: #fff;
 }
