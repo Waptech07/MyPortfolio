@@ -60,7 +60,7 @@ nav ul li a:hover::after {
     transition: width .3s;
 }
 
-.user {
+.user .container{
     display: flex;
 }
 
@@ -129,6 +129,8 @@ nav ul li a:hover::after {
     margin: 0 30px;
     padding: 10px 30px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
     font-size: larger;
     transition: color .5s ease-in-out, background-color .5s ease-in-out;
 }
@@ -327,7 +329,7 @@ footer {
         display: none;
     }
 
-    .user {
+    .user .container {
         display: block;
         text-align: center;
         align-items: center;
@@ -367,7 +369,7 @@ footer {
 
 }
 
-@media (max-width: 885px) {
+@media (max-width: 900px) {
 
     .nav ul {
         position: absolute;
@@ -456,8 +458,10 @@ footer {
 
     .links a {
         display: inline-block;
-        margin: 10px;
-        padding: 10px 30px;
+        margin: 0 10px;
+        width: 20px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -515,9 +519,28 @@ footer {
     background-color: #333232;
 }
 
+#home.dark {
+    background-color: #333232;
+}
+
 .navbar.dark {
     background: #141414ec;
     border-bottom: 1px solid #dfdfdf;
+}
+
+.navbar a.dark:hover {
+    color: #fff;
+}
+
+.links a.dark {
+    color: #fff;
+    background: #212121;
+}
+
+.links a.dark:hover {
+    color: #120055;
+    font-size: larger;
+    background: #fff;
 }
 
 .about.dark {
@@ -588,10 +611,9 @@ a.btn.dark {
 }
 
 a.btn:hover.dark {
-    color: #000;
+    color: #120055;
     background: #fff;
     outline: #fff;
-    font-weight: bold;
 }
 footer.dark {
     background: #212121;

@@ -2,6 +2,9 @@ $(document).ready(function () {
   $(".darkmode").click(function () {
     $(".navbar").addClass("dark");
     $(".user").addClass("dark");
+    $("#home").addClass("dark");
+    $(".links a").addClass("dark");
+    $(".navbar a").addClass("dark");
     $(".about").addClass("dark");
     $("#about").addClass("dark");
     $("#skills").addClass("dark");
