@@ -7,9 +7,9 @@ $(document).ready(function () {
     $(".navbar a").addClass("dark");
     $(".about").addClass("dark");
     $("#about").addClass("dark");
-    $("#skills").addClass("dark");
-    $(".skills-heading h2").addClass("dark");
-    $(".skills-details").addClass("dark");
+    $(".skills").addClass("dark");
+    // $(".skills-heading h2").addClass("dark");
+    // $(".skills-details").addClass("dark");
     $(".project").addClass("dark");
     $(".content").addClass("dark");
     $(".contact-container").addClass("dark");
@@ -32,12 +32,35 @@ $(document).ready(function () {
 });
 
 // for-responsive menu
-$(document).ready(function () {
-  $(".nav-menu").click(function () {
-    $(".nav-menu").toggleClass("active");
-    $(".nav").toggleClass("active");
-  });
-});
+// $(document).ready(function () {
+//   $(".nav-menu").click(function () {
+//     $(".nav-menu").toggleClass("active");
+//     $(".nav").toggleClass("active");
+//   });
+// });
+
+    // const menuToggle = document.getElementById('menu-toggle');
+    // const navSidebar = document.getElementById('nav-sidebar');
+
+    // menuToggle.addEventListener('click', () => {
+    //     navSidebar.classList.toggle('active');
+    // });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const navSidebar = document.getElementById('nav-sidebar');
+    const backdrop = document.getElementById('backdrop');
+    
+    // Toggle Sidebar
+    menuToggle.addEventListener('click', () => {
+        navSidebar.classList.toggle('active');
+        backdrop.classList.toggle('active');
+    });
+    
+    // Close Sidebar when clicking the backdrop
+    backdrop.addEventListener('click', () => {
+        navSidebar.classList.remove('active');
+        backdrop.classList.remove('active');
+    });
 
 const boxes = document.querySelectorAll('#box');
 
